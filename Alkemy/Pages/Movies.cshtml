@@ -1,0 +1,34 @@
+﻿@page
+@model Alkemy.Models.ListaPeliculas
+
+@section css{ 
+    <link href="~/css/movies.css" rel="stylesheet" />
+}
+
+<div class="filters">
+    <input type="text" name="name" id="input-title" placeholder="Título" />
+    <form method="get" action="/movie">
+        <select id="genre" name="genre">
+            <option value="none">----------------</option>
+            <option value="romance">Romance</option>
+            <option value="fantasía">Fantasía</option>
+            <option value="terror">Terror</option>
+        </select>
+        <select id="order" name="order">
+            <option value="">Tipo de orden</option>
+            <option value="asc">Ascendente</option>
+            <option value="desc">Descendente</option>
+        </select>
+        @*<input type="submit" value="Buscar"/>*@
+    </form>
+    <button id="btnFilter">Filtrar</button>
+</div>
+
+<div class="container-div" id="container-div">
+    
+</div>
+
+@section scripts{
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="~/js/movies.js"></script>
+ }

@@ -1,0 +1,19 @@
+﻿body {
+}
+
+input{
+    margin: 10px;
+}
+
+img{
+    width: 200px;
+}
+
+table{
+    margin-top: 30px;
+    text-align: center;
+}
+table th{
+    border: 1px solid black;
+    padding: 40px;
+}

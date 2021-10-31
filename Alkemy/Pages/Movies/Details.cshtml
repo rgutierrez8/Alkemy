@@ -1,0 +1,42 @@
+﻿@page
+@model Alkemy.Pages.Movies.DetailsModel
+@{
+}
+
+@section css{ 
+    <link href="~/css/movies.css" rel="stylesheet" />
+}
+<h3>DETALLESS</h3>
+
+<div class="details">
+    <div class="movie">
+        <div class="image">
+            <img id="imageDetails" />
+        </div>
+        <div class="info">
+            <div>
+                <span>ID: </span> <h3 id="id"></h3>
+            </div>
+            <div>
+                <span>Titulo: </span><h3 id="title"></h3>
+            </div>
+            <div>
+                <span>Fecha de creación: </span><h3 id="date"></h3>
+            </div>
+            <div>
+                <span>Calificación: </span><h3 id="qualification"></h3>
+            </div>
+            <div>
+                <span>Personajes: </span>
+                <ul id="list">
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="~/js/movieDetails.js"></script>
+}
